@@ -1,0 +1,7 @@
+server:
+  port: 8852
+  servlet:
+    context-path: /jenkins-service
+spring:
+  application:
+    name: JENKINS-SERVICE
