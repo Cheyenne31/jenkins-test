@@ -22,7 +22,7 @@ import java.util.List;
 @RequestMapping("/test")
 public class TestController {
 
-    @ApiOperation(value = "jenkins测试", notes = "")
+    @ApiOperation(value = "jenkins测", notes = "")
     @PostMapping("/jenkins")
     public Boolean listMonthSchedule() {
         return Boolean.TRUE;
