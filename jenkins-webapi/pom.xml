@@ -11,5 +11,26 @@
 
     <artifactId>jenkins-webapi</artifactId>
 
+    <build>
+        <finalName>jenkins-webapi</finalName>
+        <directory>target</directory>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.0.1.RELEASE</version>
+                <configuration>
+                    <mainClass>com.lic.TestApplication</mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
